@@ -1,0 +1,29 @@
+.top_nav > .user_info{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom:1px solid #f2f3f8;
+}
+.top_nav >ul >li >a {
+  display: inline-block;
+  width: 100%;
+}
+.top_nav >ul >li {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.top_nav >ul >li:hover {
+  background-color: #f2f3f8;
+}
+
+.top_nav i.fa {
+  position: absolute;
+  left: 3em;
+  height: 20px;
+  line-height: 20px;
+  margin:5px 0;
+}
