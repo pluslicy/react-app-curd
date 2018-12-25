@@ -4,6 +4,7 @@ import StudentForm from './StudentForm'
 import StudentList from './StudentList'
 
 class StudentLayout extends Component{
+
   render(){
     return (
       <div className='student_layout'>
