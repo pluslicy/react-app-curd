@@ -1,0 +1,59 @@
+.blue_button { /* 按钮美化 */
+	width: 80px; /* 宽度 */
+	height: 30px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+  font-size: 16px; /* 字体大小 */
+  margin:0.5em;
+}
+.blue_button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+/* ↓↓↓↓↓模态框↓↓↓↓↓ */
+.dialog_model{
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2018;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dialog_model .dialog_div{
+  position: absolute;
+  z-index: 2019;
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+  opacity: 1;
+  text-align: center;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.dialog_model .dialog_div .dialog_div_title{
+  opacity: 1;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;  
+  background-color: #1E90FF;
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+  color: #fff;
+}
+.dialog_model .dialog_div .dialog_div_content{
+  opacity: 1;
+  width: 100%;
+  height: 210px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px ;
+  padding: 40px 0 0 0;
+}
+/* ↑↑↑↑↑模态框↑↑↑↑↑ */
