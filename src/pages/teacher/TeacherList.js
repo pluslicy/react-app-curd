@@ -32,7 +32,7 @@ class TeacherList extends Component{
 
 
 
-    //重写成员方法
+    //必须重写成员方法
     render(){
         let {teacherList}=this.state;
         return (
