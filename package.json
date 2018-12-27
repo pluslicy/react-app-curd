@@ -4,7 +4,14 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+<<<<<<< HEAD
     "mockjs": "^1.0.1-beta3",
+=======
+    "lodash": "^4.17.11",
+    "mockjs": "^1.0.1-beta3",
+    "path-to-regexp": "^2.4.0",
+    "qs": "^6.6.0",
+>>>>>>> 38f497af4e2befcb3d8edf30395361b6efcb4b3f
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
