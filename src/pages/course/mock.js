@@ -1,6 +1,6 @@
 import Mock from "mockjs";
 Mock.mock('/courseList',{
-  "courses|1-10": [
+  "courses|5": [
     {
       "id|1-100000":10000,
       "name|+1": [
