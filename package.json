@@ -5,12 +5,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "mockjs": "^1.0.1-beta3",
-<<<<<<< HEAD
-    "lodash": "^4.17.11",
-    "path-to-regexp": "^2.4.0",
-    "qs": "^6.6.0",
-=======
->>>>>>> 7bb4cccc2e00892a0747b473a50c645d9eee6588
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",

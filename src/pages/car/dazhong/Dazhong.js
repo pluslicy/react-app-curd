@@ -28,8 +28,12 @@ class Dazhong extends Component{
         price:"18.99-30.39"
       }],
       dialog:"none",
+      editDialog:"none",
       name:'',
       price:'',
+      editname:'',
+      editprice:'',
+      index:''
     }
   }
   // 弹框
@@ -40,9 +44,8 @@ class Dazhong extends Component{
     })
   }
   closeDialog = ()=>{
-    let dialog = 'none';
     this.setState({
-      dialog:dialog
+      dialog:'none'
     })
   }
   // 增加
@@ -69,13 +72,47 @@ class Dazhong extends Component{
     })
   }
   // 编辑
-  edit = (index,event)=>{
-
+  edit = (index,)=>{
+    let name = this.state.tableitem[index].name;
+    let price = this.state.tableitem[index].price;
+    this.setState({
+      editDialog:'block',
+      editname:name,
+      editprice:price
+    })
+    
+  }
+  closeEditDialog = ()=>{
+    this.setState({
+      editDialog:'none',
+    })
+  }
+  editNameChange = (event)=>{
+    this.setState({
+      editname:event.target.value
+    })
+  }
+  editPriceChange = (event)=>{
+    this.setState({
+      editprice:event.target.value
+    })
+  }
+  saveedit = ()=>{
+    let arr = [...this.state.tableitem];
+    let obj = {
+      id:this.state.index,
+      name:this.state.editname,
+      price:this.state.editprice
+    }
+    arr.splice(obj.id,1,obj);
+    this.setState({
+      tableitem:arr
+    })
   }
   // 删除
   del = (index,event)=>{
-    let arr = [...this.state.tableitem]
-    arr.splice(index,1)
+    let arr = [...this.state.tableitem];
+    arr.splice(index,1);
     this.setState({
       tableitem:arr
     })
@@ -90,6 +127,9 @@ class Dazhong extends Component{
       lineHeight:'30px',
       width:'50%',
       padding:'0 0.5em',
+    }
+    let editDialogStyle = {
+      display:this.state.editDialog
     }
     return (
       <div className='car_dazhong'>
@@ -129,6 +169,41 @@ class Dazhong extends Component{
           
         </div>
         {/* dialog结束 */}
+        {/* dialog开始 */}
+        <div className="dialog_model" style={editDialogStyle}>
+          <div className="dialog_div" style={editDialogStyle}>
+            <div className="dialog_div_title">
+              编 辑
+              <span style={{float:'right',marginRight:'12px',cursor:'pointer'}} onClick={()=>{
+                this.closeEditDialog()
+              }}>×</span>
+            </div>
+            <div className="dialog_div_content">
+              <div style={{height:'30px',lineHeight:'30px'}}>
+                <label style={{width:'80px',cursor:'default',}}>车型：</label>
+                <input type="text" placeholder="请输入车型" style={inputStyle} value={this.state.editname} onChange={(event)=>{
+                  this.editNameChange(event)
+                }}></input>
+              </div>
+              <div style={{height:'30px',lineHeight:'30px',marginTop:'30px'}}>
+                <label style={{width:'80px',cursor:'default',}}>价格：</label>
+                <input type="text" placeholder="请输入价格" style={inputStyle} value={this.state.editprice} onChange={(event)=>{
+                  this.editPriceChange(event)
+                }}></input>
+              </div>
+              <div style={{float:'right',marginRight:'1.5em',marginTop:'50px'}}>
+                <button className="blue_button" style={{background:"#ccc"}} onClick={()=>{
+                  this.closeEditDialog()
+                }}>取消</button>
+                <button className="blue_button"onClick={(index)=>{
+                  this.closeEditDialog()
+                  this.saveedit();
+                }}>确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* dialog结束 */}
         <div style={{height:'50px',fontSize:'28px',lineHeight:'50px'}}>
           <img src={this.state.src} alt="" style={{width:'50px',height:'50px',verticalAlign:'middle'}}></img>
           大众（Volkswagen）
@@ -155,6 +230,7 @@ class Dazhong extends Component{
                   <td>
                     <span style={{color:'blue',fontWeight:'700',cursor:'pointer'}} onClick={(event)=>{
                       this.edit(index,event)
+                      this.setState({index:index})
                     }}>编辑</span>
                     <span style={{marginLeft:'20px',color:'red',fontWeight:'700',cursor:'pointer'}} onClick={(event)=>{
                       this.del(index,event)
