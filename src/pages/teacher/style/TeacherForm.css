@@ -1,0 +1,49 @@
+.teacherForm{
+}
+
+.teacherForm form{
+    width: 50%;
+    border:1px solid #ccc;
+    margin:0 auto;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.teacherForm form>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px
+    
+}
+
+.teacherForm form>div>div{
+    flex: 1
+}
+.teacherForm form>div>div textarea,.teacherForm form>div>div input[type='text'],.teacherForm form>div>div select{
+    width: 200px;
+    height: 30px;
+
+}
+
+.teacherForm form>div>div textarea,.teacherForm form>div>div label,.teacherForm form>div>div select,.teacherForm form>div>div input[type='text']{
+    margin-left: 20px;
+
+}
+.teacherForm form div span.sigle{
+    position: relative;
+    top: -10px
+}
+
+.teacherForm form button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: lightblue;
+    position: relative;
+    left: 700px;
+    top: 12px;
+}
+
+

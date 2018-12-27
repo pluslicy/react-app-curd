@@ -1,0 +1,31 @@
+.teacherList{
+    border:1px solid #ccc;
+    width: 90%;
+    margin:0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+.teacherList table{
+    width: 80%;
+    border:1px solid red;
+    border-collapse: collapse;
+    margin:0 auto
+}
+
+.teacherList table tr th,.teacherList table tr td{
+    border:1px solid black;
+    text-align: center;
+    height: 30px;
+    max-width: 200px;
+}
+
+.teacherList table tr td span{
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.teacherList table tr td span:hover{
+    color: blue
+}

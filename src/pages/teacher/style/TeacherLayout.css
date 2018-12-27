@@ -1,0 +1,29 @@
+.teacher_layout{
+}
+
+.teacher_layout .search{
+    border:1px solid #ccc;
+    width: 50%;
+    margin:0 auto;
+    padding: 20px;
+
+}
+.teacher_layout .search div{
+    width: 50%;
+    margin: 0 auto
+}
+.teacher_layout .search input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+.teacher_layout .search button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: lightblue;
+   
+}
