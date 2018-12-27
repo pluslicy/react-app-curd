@@ -20,6 +20,10 @@
 .teacherForm form>div>div{
     flex: 1
 }
+
+.teacherForm .hideInput{
+    display: none
+}
 .teacherForm form>div>div textarea,.teacherForm form>div>div input[type='text'],.teacherForm form>div>div select{
     width: 200px;
     height: 30px;
