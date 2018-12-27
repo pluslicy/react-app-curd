@@ -1,0 +1,15 @@
+.goods_list > table{
+    border:1px solid #333;
+     width:100%; 
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.goods_list > table tr,.goods_list > table td{
+    border: 1px solid #333;
+    text-align: center;
+     min-width:100px
+}
+ .goods_list > table td > span{
+    cursor: pointer;
+    margin-right: 1em
+} 

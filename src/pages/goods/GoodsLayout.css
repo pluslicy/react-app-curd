@@ -1,0 +1,27 @@
+.goods_layout{
+	width: 90%;
+	margin: 0 auto
+}
+.goods_layout > #goods_from{
+	position:absolute;
+	background-color: #ededed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: .5em .5em;
+}
+.goods_layout > .close_btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100
+}
+.goods_layout > .btns{
+	margin-bottom: 1em;
+	overflow: hidden
+}
+.goods_layout > .btns >div{
+	float: left;
+	margin-right: 2em
+}
