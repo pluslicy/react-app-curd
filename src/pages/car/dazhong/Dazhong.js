@@ -27,7 +27,6 @@ class Dazhong extends Component{
         name:"帕萨特",
         price:"18.99-30.39"
       }],
-      title:'',
       dialog:"none",
       name:'',
       price:'',
@@ -37,8 +36,7 @@ class Dazhong extends Component{
   openDialog = ()=>{
     let dialog = 'block';
     this.setState({
-      dialog:dialog,
-      title:'新增'
+      dialog:dialog
     })
   }
   closeDialog = ()=>{
@@ -72,9 +70,7 @@ class Dazhong extends Component{
   }
   // 编辑
   edit = (index,event)=>{
-    this.setState({
-      title:'编辑'
-    })
+
   }
   // 删除
   del = (index,event)=>{
