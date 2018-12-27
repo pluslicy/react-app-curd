@@ -13,7 +13,7 @@ class TopNav extends Component {
           <li><i className='fa fa-fw fa-tv'></i> <Link to='/student'>学生</Link></li>
           <li><i className='fa fa-fw fa-user'></i> <Link to='/teacher'>教师</Link></li>
           <li><i className='fa fa-fw fa-tag'></i> <Link to='/course'>课程</Link></li>
-          <li><i className='fa fa-fw fa-envelope'></i> <Link to='/car'>车辆</Link></li>
+          <li><i className='fa fa-fw fa-envelope'></i> <Link to='/car/dazhong'>车辆</Link></li>
           <li><i className='fa fa-fw fa-tint'></i> <Link to='/department'>部门</Link></li>
           <li><i className='fa fa-fw fa-phone'></i> <Link to='/goods'>商品</Link></li>
           <li><i className='fa fa-fw fa-flag'></i> <Link to='/mr'>会议室</Link></li>
