@@ -1,0 +1,116 @@
+button{
+    background-color:lightblue;
+    width:80px;
+    height:40px;
+    font-size:18px;
+    color:white;
+    border-radius:5px;
+    margin-left:10px;
+    cursor: pointer;
+    
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+    margin-top:10px;
+    height:300px;
+    
+}
+.table td, .table th{
+  border:1px solid #ccc;  
+}
+.table>thead th:first-child{
+    width:80px; 
+ }
+ .table>tbody ,
+.table>tbody {
+    text-align: center;
+    color:rgb(17, 16, 16);
+}
+
+.table  span{
+    cursor: pointer;
+    padding:0 .5em;
+    color:#ccc;
+}
+.table  span:hover{
+    cursor: pointer;
+    color:#FF0033;
+}
+.meetingRoom_layout .search{
+    border:1px solid #ccc;
+    width: 30%;
+    padding:10px;
+   height:15px;
+   margin-left:400px;
+   border-radius: 15px;
+   background:#ededed;
+   outline:none;
+  
+  
+}
+.meetingRoom_layout{
+    position: relative;
+}
+.meetingRoom_layout .model{
+    position: absolute;
+    width:100%;
+    top:0px;
+    height:100%;
+    display:none; 
+    background-color:rgba(0, 0,0, 0.2);
+}
+.model .addMeet{
+  
+   position: relative;
+    margin:25px auto;
+    width:700px;
+   height:85%;
+    background-color:white;
+    
+}
+.model .addMeet button{
+    position: absolute;
+    right:15px;
+    bottom:15px;
+    background:#409eff;
+   
+} 
+.addMeet .titleModel{
+    width:100%;
+    height:50px;
+    background-color:teal;
+    font-size:20px;
+    line-height:50px;
+    color:white;
+    text-align:center;
+    font-weight:bolder;
+  
+}
+span{
+    font-size:14px;
+    color:black;
+    margin-left:30px;
+   
+   
+}
+.meetingRoom_layout .addNum{
+    border:1px solid #ccc;
+    width: 80%;
+   
+   padding-top:10px;
+   padding-bottom:10px;
+   height:15px;
+   border-radius: 5px;
+   margin-top:20px;
+  
+  
+   
+   outline:none;
+  
+}
+
+
+
